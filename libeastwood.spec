@@ -29,6 +29,7 @@ pak++ data files used in some games (mainly targetting Dune 2).
 %package -n	%{libdev}
 Summary:	Development files and headers for %{name}
 Group:		Development/C
+Requires:	%{libname} = %{version}
 
 %description -n	%{libdev}
 This package contains the headers needed to build applications with %{name}.
