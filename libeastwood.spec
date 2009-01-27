@@ -1,6 +1,6 @@
 %define	major	0
 %define	libname %mklibname eastwood %{major}
-%define	libdev	%mklibname -d eastwood %{major}
+%define	libdev	%mklibname -d eastwood
 
 Summary:	Game data library
 Name:		libeastwood
