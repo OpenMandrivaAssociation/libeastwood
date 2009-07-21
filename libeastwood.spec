@@ -4,7 +4,7 @@
 
 Summary:	Game data library
 Name:		libeastwood
-Version:	0.1
+Version:	0.2
 Release:	%mkrel 1
 License:	GPLv3
 Group:		System/Libraries
@@ -60,4 +60,3 @@ rm -rf %{buildroot}
 %{_libdir}/libeastwood.so
 %{_libdir}/pkgconfig/libeastwood.pc
 %{_datadir}/cmake/Modules/FindLibEastwood.cmake
-
