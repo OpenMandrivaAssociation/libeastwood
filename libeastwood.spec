@@ -10,7 +10,7 @@ License:	GPLv3
 Group:		System/Libraries
 URL:		http://launchpad.net/libeastwood
 Source0:	%{name}-%{version}.tar.xz
-BuildRequires:	SDL-devel SDL_mixer-devel libsamplerate-devel
+BuildRequires:	SDL-devel SDL_mixer-devel libsamplerate-devel cmake
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
