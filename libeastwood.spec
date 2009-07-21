@@ -8,7 +8,7 @@ Version:	0.2
 Release:	%mkrel 1
 License:	GPLv3
 Group:		System/Libraries
-URL:		http://launchpad.net/doonlunacy
+URL:		http://launchpad.net/libeastwood
 Source0:	%{name}-%{version}.tar.xz
 BuildRequires:	SDL-devel SDL_mixer-devel libsamplerate-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
