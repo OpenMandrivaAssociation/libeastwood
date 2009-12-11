@@ -13,7 +13,7 @@ Group:		System/Libraries
 URL:		http://launchpad.net/doonlunacy
 Source0:	%{name}-%{version}.tar.xz
 BuildRequires:	SDL-devel SDL_mixer-devel libsamplerate-devel python-devel
-BuildRequires:	cmake
+BuildRequires:	cmake python-setuptools
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
