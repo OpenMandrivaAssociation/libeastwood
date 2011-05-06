@@ -2,12 +2,10 @@
 %define	libname %mklibname eastwood %{major}
 %define	libdev	%mklibname -d eastwood
 
-%define	sdlname %mklibname SDL_eastwood %{major}
-
 Summary:	Game data library
 Name:		libeastwood
 Version:	0.3.1
-Release:	1
+Release:	2
 License:	GPLv3+
 Group:		System/Libraries
 URL:		http://launchpad.net/doonlunacy
@@ -26,13 +24,6 @@ Group:		System/Libraries
 %description -n	%{libname}
 This library provides support for handling wsa, shp, icn, cps, pal, adl, voc,
 pak++ data files used in some games (mainly targetting Dune 2).
-
-%package -n	%{sdlname}
-Summary:	Game data library
-Group:		System/Libraries
-
-%description -n	%{sdlname}
-This library provides SDL support for libeastwood.
 
 %package -n	%{libdev}
 Summary:	Development files and headers for %{name}
@@ -66,14 +57,10 @@ cd build
 %doc README
 %{_libdir}/libeastwood.so.%{major}*
 
-%files -n %{sdlname}
-%{_libdir}/libSDL_eastwood.so.%{major}*
-
 %files -n %{libdev}
 %doc doc/* TODO
 %{_includedir}/eastwood
 %{_libdir}/libeastwood.so
-%{_libdir}/libSDL_eastwood.so
 %{_libdir}/pkgconfig/libeastwood.pc
 %{_datadir}/cmake/Modules/FindLibEastwood.cmake
 
