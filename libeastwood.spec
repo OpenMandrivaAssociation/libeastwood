@@ -6,15 +6,14 @@
 
 Summary:	Game data library
 Name:		libeastwood
-Version:	0.3
-Release:	%mkrel 2
-License:	GPLv3
+Version:	0.3.1
+Release:	1
+License:	GPLv3+
 Group:		System/Libraries
 URL:		http://launchpad.net/doonlunacy
 Source0:	%{name}-%{version}.tar.xz
 BuildRequires:	SDL-devel SDL_mixer-devel libsamplerate-devel python-devel
 BuildRequires:	cmake python-setuptools
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 This library provides support for handling wsa, shp, icn, cps, pal, adl, voc,
@@ -60,24 +59,17 @@ utility using the bindings.
 %make
 
 %install
-rm -rf %{buildroot}
 cd build
 %makeinstall_std
 
-%clean
-rm -rf %{buildroot}
-
 %files -n %{libname}
-%defattr(-,root,root)
 %doc README
 %{_libdir}/libeastwood.so.%{major}*
 
 %files -n %{sdlname}
-%defattr(-,root,root)
 %{_libdir}/libSDL_eastwood.so.%{major}*
 
 %files -n %{libdev}
-%defattr(-,root,root)
 %doc doc/* TODO
 %{_includedir}/eastwood
 %{_libdir}/libeastwood.so
@@ -86,7 +78,6 @@ rm -rf %{buildroot}
 %{_datadir}/cmake/Modules/FindLibEastwood.cmake
 
 %files -n python-eastwood
-%defattr(-,root,root)
 %{_bindir}/eastwood
 %{python_sitearch}/eastwood.py*
 %{python_sitearch}/pyeastwood*
