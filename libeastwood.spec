@@ -45,7 +45,6 @@ utility using the bindings.
 %setup -q
 
 %build
-%define _cmake_verbose 1
 %cmake -DLIBEASTWOOD_BUILD_PYTHON=1 -DLIBEASTWOOD_BUILD_SDL=1
 %make
 
