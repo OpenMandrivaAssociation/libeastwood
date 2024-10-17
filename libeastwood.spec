@@ -8,7 +8,7 @@ Version:	0.3.1
 Release:	2
 License:	GPLv3+
 Group:		System/Libraries
-URL:		http://launchpad.net/doonlunacy
+URL:		https://launchpad.net/doonlunacy
 Source0:	%{name}-%{version}.tar.xz
 BuildRequires:	SDL-devel SDL_mixer-devel libsamplerate-devel python-devel
 BuildRequires:	cmake python-setuptools
